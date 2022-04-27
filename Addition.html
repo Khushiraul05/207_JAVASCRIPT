@@ -1,0 +1,30 @@
+<html>
+<head>
+<style>
+form
+{
+background:pink;
+}
+</style>
+<script>
+function f()
+{
+no=eval(document.getElementById("no").value);
+num=eval(document.getElementById("num").value);
+sum=no+num;
+document.getElementById("text").value=sum
+}
+</script>
+</head>
+<body>
+<form>
+<h5>ENTER FIRST NUMBER:<input type="text"
+ id="no"><br><br>
+ENTER SECOND NUMBER:<input type="text"
+ id="num"><br><br>
+RESULT:<input type="text" id="text"><br><br>
+<input type="button" id="btntable" value="ADD" 
+onclick="f()">
+</form>
+</body>
+</html>
