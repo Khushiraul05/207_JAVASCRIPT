@@ -1,0 +1,22 @@
+<HTML>
+<HEAD>
+<script language="javascript">
+ function onlyalpha(e)
+ {
+ key= e.keyCode ;
+ if((key>=65 && key<=90) || (key>=95 && key<=122))
+ {
+  return true;
+ }
+ else
+ {
+  alert("You cannot enter numbers")
+ return false;
+ }
+ }
+</script>
+</HEAD>
+<BODY>
+Name: <input type="text" id="txtname" onKeyPress="return onlyalpha(event)" />  
+</BODY>
+</HTML>
